@@ -1,0 +1,64 @@
+/* Write an algorithm that read a sentence, which ends with a point, character by character and to determine
+
+1 - The length of the sentence(the number of characters)
+2 - The number of words in the sentence (assuming that the words are seperated by a single space)
+3 - The number of vowels in the sentence.
+*/
+
+
+
+/* ALGORITHM TO DETERMINE THE LENGTH OF THE SENTENCE */
+// create a variable to hold the count and initialize it with 0
+// Iterate over the sentence using for loop and increment the count during iteration
+// print out the result of your count
+
+count : integer := 0
+words : STRING := "i am on my way to the space"
+
+FOR count FROM 0 TO words.length DO
+  count := count + 1
+END_FOR
+
+
+
+
+
+/* ALGORITHM TO DETERMINE THE NUMBER OF WORDS IN THE SENTENCES */
+// create and initialize a variable to hold the count, you can set it to 0 
+// iterate through each character 
+// Check if the current character is a space
+// if the character is a space, increment the count
+// continue the iteration until all character has been processed
+// print result
+// stop.
+
+wordCount : INTEGER := 0
+words : STRING := "i am on my way to the space"
+
+FOR i FROM 0 TO words.length STEP step  DO
+  IF (words == " ") THEN
+    wordCount := wordCount + 1
+  END_IF
+  print(wordCount)
+END_FOR
+
+
+
+
+/* ALGORITH TO DETERMINE THE NUMBER OF VOWELS IN THE SENTENCES */
+// intialize a count variable and set it to 0
+// iterate through each character in the sentence
+// check if the present character is a vowel (a,e,i,o,u), if it's a vowel, increment the count 
+// after the iteration, the count will contain the total number of vowel in the sentence
+
+vowelCount : INTEGER := 0
+words : STRING := "i am on my way to the space"
+vowels : STRING := {'a', 'e', 'i', 'o', 'u'};
+
+
+FOR i FROM 0 TO words.length STEP 1  DO
+  IF (words == 'a' || words == 'e' || words == 'i' || words == 'o' || words == 'u') THEN
+    vowelCount := vowelCount + 1
+  END_IF
+  print(vowelCount)
+END_FOR
